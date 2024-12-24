@@ -3,9 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bus Ticket</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <main>
+        <!-- Navbar -->
+        <section>
+            <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm px-20">
+                <div class="flex justify-between items-center py-4">
+                    <div><a href="#"><img src="asset/P-Ticket.png" alt=""></a></div>
+                    <div>
+                        <ul class="flex gap-8 font-normal text-xl">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Bus</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                   <div class="flex gap-2 items-center justify-center bg-[#1DD1001A] px-8 
+                                py-2 text-lg font-medium text-[#1DD100] border-[1px] border-[#1DD100] 
+                                rounded-md cursor-pointer"> 
+                                <button>Bus</button><span><img src="asset/bus-icon.png" alt=""></span></div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Hero Section -->
+         <section class="pt-32">
+            <div class="bg-cover bg-center h-screen rounded-2xl flex flex-col justify-center items-center overflow-hidden max-h-[70vh]" 
+            style="background-image: url('asset/banner.png');">
+                <div class="flex flex-col items-center gap-6">
+                    <h1 class="text-7xl text-white font-bold text-center">End-to-End Travel with 
+                        <br> <span class="text-[#1DD100]">P Paribahan</span>
+                    </h1>
+                   <p class="text-center text-white font-normal font text-xl">
+                        Yes, you can run unit tests and view the results directly within the app. 
+                        <br> The integrated testing features allow for a streamlined .
+                    </p>
+                    <button class="bg-[#1DD100] text-black font-medium px-8 py-2 rounded-md">BUY TICKET</button>
+                </div>
+
+            </div>
+
+            <div class="flex max-w-[800px] mx-auto gap-6 -mt-12">
+                <div class="bg-white flex flex-col justify-center items-center gap-2 px-16 py-6 rounded-md shadow-md border-b-2 border-[#1DD100]">
+                    <h4 class="text-black font-bold text-4xl">500K+</h4>
+                    <p>Registered users</p>
+                </div>
+                <div class="bg-white flex flex-col justify-center items-center gap-2 px-16 py-6 rounded-md shadow-md border-b-2 border-[#1DD100]">
+                    <h4 class="text-black font-bold text-4xl">1.7 lacks</h4>
+                    <p>Tickets sold</p>
+                </div>
+                <div class="bg-white flex flex-col justify-center items-center gap-2 px-16 py-6 rounded-md shadow-md border-b-2 border-[#1DD100]">
+                    <h4 class="text-black font-bold text-4xl">80K+</h4>
+                    <p>Rental partners</p>
+                </div>
+            </div>
+         </section>
+    </main>
+   
+    <script src="script.js"></script>
 </body>
 </html>

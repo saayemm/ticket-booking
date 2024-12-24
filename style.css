@@ -1,0 +1,9 @@
+main{
+    background-color: aliceblue;
+}
+
+section{
+    max-width: 1240px;
+    margin: auto;
+    color: black;
+}
