@@ -7,3 +7,7 @@ section{
     margin: auto;
     color: black;
 }
+
+html { 
+    scroll-behavior: smooth;
+}
