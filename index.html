@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main>
+    <main id="main-1">
         <!-- Navbar -->
         <section>
             <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm px-20">
@@ -91,7 +91,7 @@
                     <div ><img class="h-full" src="asset/cupon-devider.png" alt=""></div>
 
                     <div class="flex flex-col items-center gap-2 justify-center text-center ">
-                        <h2 class="text-3xl font-bold">Couple 20</h2>
+                        <h2 class="text-3xl font-bold">COUPLE20</h2>
                         <p>Coupon Code</p>
                     </div>
                 </div>
@@ -261,19 +261,19 @@
                             <span>Economoy</span>
                             <span id="seat-price">0</span>
                         </div>
-                        <div class="flex justify-between mt-2 mb-2">
+                        <!-- <div class="flex justify-between mt-2 mb-2">
                             <h3>Total</h3>
                             <span>BDT 5500</span>
-                        </div>
-                        <div class="flex w-full">
+                        </div> -->
+                        <div id="apply-sec" class="flex w-full">
                             <input id="cupon" class="bg-white p-2 rounded-md w-full" type="text" placeholder="Have any copupon?">
                             <div class="bg-[#1dd100] flex justify-center items-center text-white px-4 py-1 rounded-md">
-                                <button>Apply</button>
+                                <button id="apply">Apply</button>
                             </div>
                         </div>
                         <div class="flex justify-between border-t-2 border-[#1dd100] pt-2 mt-2">
                             <h3>Grand Total</h3>
-                            <span>5500</span>
+                            <span id="grand-price">0</span>
                         </div>
                     </div>
 
@@ -284,16 +284,16 @@
                         type="text" placeholder="Enter your name">
 
                         <label class="font-semibold" for="p-name">Phone Number*</label>
-                        <input class="w-full bg-white rounded-md p-2 mt-2" id="p-name" 
+                        <input class="w-full bg-white rounded-md p-2 mt-2" id="p-phn" 
                         type="number" placeholder="Enter your phone number">
 
                         <label class="font-semibold" for="p-name">Email ID</label>
-                        <input class="w-full bg-white rounded-md p-2 mt-2" id="p-name" 
+                        <input class="w-full bg-white rounded-md p-2 mt-2" id="p-mail" 
                         type="email" placeholder="Enter your email id">
                      </div>
 
-                     <div class="flex bg-[#1DD100] justify-center items-center rounded-lg
-                      text-white py-2 text-xl font-semibold mt-4">
+                     <div onclick="hideHome()" class="flex bg-[#1DD100] justify-center items-center rounded-lg
+                      text-white py-2 text-xl font-semibold mt-4 cursor-pointer">
                         <button>NEXT</button>
                      </div>
 
@@ -333,6 +333,22 @@
                 </div>
 
             </footer>
+    </main>
+
+    <main id="home-2" class="hidden">
+        <section class="flex min-h-screen justify-center items-center">
+            <div class="flex flex-col gap-6 items-center justify-center bg-white p-24 rounded-3xl">
+                <img class="max-w-[100px]" src="asset/success.png" alt="">
+                <h3 class="text-[#1dd100] text-3xl font-bold">SUCCESS</h3>
+                <h2 class="text-2xl text-center">Thank you for Booking Our Bus Seats. <br>
+                    We are working hard to find the best service and deals for you.
+                </h2>
+                <p>Shortly you will find a confirmation in your email.</p>
+                <button onclick="hideScondHome()" class="bg-[#1dd100] font-semibold px-12 py-4 rounded-lg text-white uppercase">
+                    Back to Home Page
+                </button>
+            </div>
+        </section>
     </main>
    
     <script src="script.js"></script>
