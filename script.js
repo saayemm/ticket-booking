@@ -1,5 +1,7 @@
-const seat = document.getElementById('s')
+const seats = document.querySelectorAll("#seat span")
 
-seat.addEventListener("click", function highlightSeat(e){
-    e.target.classList.toggle('bg-orange-400');
- })
+seats.forEach(function (seat){
+    seat.addEventListener("click", function(e){
+        e.target.classList.toggle("bg-[#1DD100]")
+    })
+});

@@ -11,3 +11,10 @@ section{
 html { 
     scroll-behavior: smooth;
 }
+.seat{
+    background-color: aqua;
+    padding: 8px 12px;
+}
+.yellow{
+    background-color: yellow;
+}
